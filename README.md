@@ -67,24 +67,16 @@
 
 5.  进入  文件（Student-course-selection-system），打开命令框：输入   `npm run serve`
 
-   ![在这里插入图片描述](https://img-blog.csdnimg.cn/20191231102354873.gif)
-
    **如果** ：node-sass 报错 --> 必须重建node-sass  :执行 ：`npm rebuild node-sass` 重建node-sass。
 
 6.  进入  文件（iviewuinode），打开命令框：输入   `node app.js`
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191231102656331.png)
-
-7. 打开文件（Student-course-selection-system）里面的 `vue.config.js` 文件，修改配置文件，检查 proxy  代理：
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019123110305461.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk0OTc4OA==,size_16,color_FFFFFF,t_70)
+7. 打开文件（Student-course-selection-system）里面的 `vue.config.js` 文件，修改配置文件，检查 proxy  代理：将ip换为自己电脑的ip
 
 查看自己的IP 地址： 打开命令行：输入命令：`ipconfig`
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191231103257444.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk0OTc4OA==,size_16,color_FFFFFF,t_70)
+8. 配置数据库 连接：打开文件（iviewuinode）里面的在models里面的`mysql.js` 文件
 
-8. 配置数据库 连接：打开文件（iviewuinode）里面的 在models里面的`mysql.js` 文件
+9.我们要下载一个mysql的可视化工具，这里我使用的是navicat，创建六个数据表：t_admin,t_class,t_course,t_student,t_student_course,t_teacher,具体的数据表说明在报告中有
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20191231103910497.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzk0OTc4OA==,size_16,color_FFFFFF,t_70)
-
-9. 打开浏览器 ：输入 ：`localhost:8080` 打开网页。
+10. 运行，打开浏览器 ：输入 ：`localhost:3000` 打开网页。
