@@ -1,6 +1,6 @@
 # -
-高级软工选课系统
-### 技术栈
+高级软工选课系统（分为课程推荐系统和选课系统两部分，都可以分别独立运行）
+### 选课系统
 
 **客户端** ：HTML5、CSS3、Sass、ES6(7|8)、Webpack4、Vue CLI 3、Vue.JS2.6.10、Vuex3.0.1、Vue Router3.1.3、Axios0.19.0   
 
@@ -80,3 +80,22 @@
 9.我们要下载一个mysql的可视化工具，这里我使用的是navicat，创建六个数据表：t_admin,t_class,t_course,t_student,t_student_course,t_teacher,具体的数据表说明在报告中有
 
 10. 运行，打开浏览器 ：输入 ：`localhost:3000` 打开网页。
+
+
+### 推荐系统
+#### 运行单独的模块
+1. User Based: ```$ python user.py```	
+2. Item Based: ```$ python item.py```
+3. Warp MF: ```$ python hmf_warp_log.py```
+4. Logistic MF: ```$ python hmf_warp_log.py```
+5. Auto encoders: ```$ python auto_enc.py```
+
+它将返回前5名推荐课程及其成绩。此外它还将返回前5名的课程，与实际选课结果进行比较。
+
+#### 运行整个系统
+1. ```$ node main.js``` 
+2. 打开浏览器输入 ```http://localhost:3000/```
+3. 输入 student ID 和 Semester 会得到推荐你选的课程中的前五名和推荐值。
+
+Python的依赖包我们需要安装如下： LightFM, sklearn, theano, pandas, numpy, scipy, npm (express, body-parser and ejs modules for nodejs).
+
