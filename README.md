@@ -1,6 +1,8 @@
 # -
 高级软工选课系统（分为课程推荐系统和选课系统两部分，都可以分别独立运行）
-### 选课系统
+## 一、选课系统
+
+###技术栈
 
 **客户端** ：HTML5、CSS3、Sass、ES6(7|8)、Webpack4、Vue CLI 3、Vue.JS2.6.10、Vuex3.0.1、Vue Router3.1.3、Axios0.19.0   
 
@@ -82,7 +84,7 @@
 10. 运行，打开浏览器 ：输入 ：`localhost:3000` 打开网页。
 
 
-### 推荐系统
+## 二、推荐系统
 #### 运行单独的模块
 1. User Based: ```$ python user.py```	
 2. Item Based: ```$ python item.py```
